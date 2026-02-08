@@ -1,8 +1,8 @@
-# Krishuuu<!DOCTYPE html><html>
+<!DOCTYPE html><html>
 <head>
 <meta charset="UTF-8">
-<title>Krishuu ❤️</title><style>
-body {
+<title>Krishna ❤️</title><style>
+body{
     margin:0;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg,#ff9a9e,#fecfef);
@@ -42,20 +42,31 @@ button{
     background:#ccc;
     position:relative;
 }
-</style></head><body><div class="card">
-<h1>Will You Be My Girlfriend? ❤️</h1><button id="yesBtn" onclick="yes()">Yes 😍</button>
+</style></head><body><div class="card" id="mainCard"><h1>Krishna ❤️<br>Will you be my girlfriend?</h1><button id="yesBtn" onclick="accept()">Yes 😍</button>
 <button id="noBtn" onmouseover="run()">No 😢</button>
 
 </div><script>
-function yes(){
-    document.body.innerHTML="<h1 style='text-align:center;margin-top:40vh;'>I Love You ❤️</h1>";
+
+function accept(){
+document.getElementById("mainCard").innerHTML = `
+<h1>Thank you for accepting my proposal ❤️</h1>
+
+<p style="font-size:20px">
+It will be your best decision ever...<br>
+I love you ❤️ my Baby (Wifey)
+</p>
+
+<img src="https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif"
+width="250">
+`;
 }
 
 function run(){
-    let btn=document.getElementById("noBtn");
-    btn.style.position="absolute";
-    btn.style.left=Math.random()*80+"%";
-    btn.style.top=Math.random()*80+"%";
+let btn=document.getElementById("noBtn");
+btn.style.position="absolute";
+btn.style.left=Math.random()*80+"%";
+btn.style.top=Math.random()*80+"%";
 }
+
 </script></body>
 </html>
